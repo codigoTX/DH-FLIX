@@ -1,0 +1,126 @@
+
+:root{ /*Declara variáveis. Caso já saiba as cores que serão usadas no projeto, fica mais fácil para alterar apenas em um lugar.*/
+    --vermelho:#e50914;
+    --preto: #141414;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Limita o conteúdo aos limites do item pai, para que não altere o tamanho do container*/
+  } 
+  
+  
+    /* Rolagem suave: */
+    html {
+      scroll-behavior: smooth;
+   }
+  
+  /*elementos base*/
+  body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+  }
+  
+  header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+  }
+  
+  header nav a:hover{
+    color: #FFF;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Início - TELA DE LOGIN*/
+* {
+    /*font-family: 'Encode Sans SC', sans-serif;*/
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* para de adiconar tamanho no objetio, subrtaindo e mantendo a largura que eu determino */
+}
+
+ /* Rolagem suave: */
+ html {
+    scroll-behavior: smooth;
+ }
+
+body{
+    background-color: #141414;
+}
+
+#login{
+    width: 400px;
+    height: 400px;
+    margin: 12% auto;
+    background-color: rgba(204, 204, 204, 0.699);
+    border-radius: 5px;
+}
+
+.titulo-login {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+label{
+    display: block;
+    padding-left: 40px;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+input  {
+    width: 80%;
+    margin: 25px 40px;
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #23232E;
+    width: 40%;
+    margin: 4%;    
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: background;
+    transition-duration: .4s ;
+}
+
+.btn:hover{
+    background-color: #0476d0;
+    cursor: pointer;
+}
+
+/* Final tela de login */
